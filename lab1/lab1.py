@@ -8,5 +8,8 @@ def calculate(x, y, operation):
     elif operation == 'mult':
         return x * y
     elif operation == 'div':
-        return x / y
+        if y == 0:
+            print("division by zero is impossible")
+        else:
+            return x / y
 
